@@ -3,7 +3,7 @@
 //  ScreenAnnotation
 //
 //  Created by Marc Vandehey on 9/6/17.
-//  Copyright © 2017 SkyVan Labs. All rights reserved.
+//  Copyright 2017 SkyVan Labs. All rights reserved.
 //
 
 import Cocoa
@@ -24,6 +24,8 @@ extension NSBezierPath {
         path.addCurve(to: points[2], control1: points[0], control2: points[1])
       case .closePathBezierPathElement:
         path.closeSubpath()
+      default:
+        break
       }
     }
 
